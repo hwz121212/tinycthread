@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_thirdparty", "0_thirdparty", "{5AAEBACA-C623-48CD-9937-D209619A0676}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_demo", "1_demo", "{D2E66E44-314C-4FA2-A096-E94AC74FE3F5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libtinycthread", "thirdparty\tinycthread-1.2\libtinycthread.vcxproj", "{422DEFE9-D526-3075-94B7-87ED8BE6320A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-tinycthread", "demo\test\test-tinycthread.vcxproj", "{8FF11B86-29D0-3CE0-AE55-7DD386EDAB1B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{422DEFE9-D526-3075-94B7-87ED8BE6320A} = {422DEFE9-D526-3075-94B7-87ED8BE6320A}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hello-tinycthread", "demo\hello\hello-tinycthread.vcxproj", "{9643B698-8CA2-49FF-B6B6-4809B1355B49}"
+	ProjectSection(ProjectDependencies) = postProject
+		{422DEFE9-D526-3075-94B7-87ED8BE6320A} = {422DEFE9-D526-3075-94B7-87ED8BE6320A}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{422DEFE9-D526-3075-94B7-87ED8BE6320A}.Debug|x64.ActiveCfg = Debug|x64
+		{422DEFE9-D526-3075-94B7-87ED8BE6320A}.Debug|x64.Build.0 = Debug|x64
+		{422DEFE9-D526-3075-94B7-87ED8BE6320A}.Release|x64.ActiveCfg = Release|x64
+		{422DEFE9-D526-3075-94B7-87ED8BE6320A}.Release|x64.Build.0 = Release|x64
+		{8FF11B86-29D0-3CE0-AE55-7DD386EDAB1B}.Debug|x64.ActiveCfg = Debug|x64
+		{8FF11B86-29D0-3CE0-AE55-7DD386EDAB1B}.Debug|x64.Build.0 = Debug|x64
+		{8FF11B86-29D0-3CE0-AE55-7DD386EDAB1B}.Release|x64.ActiveCfg = Release|x64
+		{8FF11B86-29D0-3CE0-AE55-7DD386EDAB1B}.Release|x64.Build.0 = Release|x64
+		{9643B698-8CA2-49FF-B6B6-4809B1355B49}.Debug|x64.ActiveCfg = Debug|x64
+		{9643B698-8CA2-49FF-B6B6-4809B1355B49}.Debug|x64.Build.0 = Debug|x64
+		{9643B698-8CA2-49FF-B6B6-4809B1355B49}.Release|x64.ActiveCfg = Release|x64
+		{9643B698-8CA2-49FF-B6B6-4809B1355B49}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{422DEFE9-D526-3075-94B7-87ED8BE6320A} = {5AAEBACA-C623-48CD-9937-D209619A0676}
+		{8FF11B86-29D0-3CE0-AE55-7DD386EDAB1B} = {D2E66E44-314C-4FA2-A096-E94AC74FE3F5}
+		{9643B698-8CA2-49FF-B6B6-4809B1355B49} = {D2E66E44-314C-4FA2-A096-E94AC74FE3F5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C8856FF-3A5A-323B-8B4D-6CCFD574A761}
+	EndGlobalSection
+EndGlobal
